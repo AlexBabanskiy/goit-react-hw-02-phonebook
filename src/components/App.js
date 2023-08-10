@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import ContactForm from './Phonebook/ContactForm';
-import ContactList from './Phonebook/ContactList';
-import Filter from './Phonebook/Filter';
+import ContactForm from './Phonebook/Contactform/ContactForm';
+import ContactList from './Phonebook/Contactlist/ContactList';
+import Filter from './Phonebook/Filter/Filter';
 import { nanoid } from 'nanoid';
-import { PhonebookContainer, Title } from './Phonebook/Phonebook.styled';
+import {
+  PhonebookContainer,
+  Title,
+} from './Phonebook/Contactitem/Phonebook.styled';
 
 class App extends Component {
   state = {

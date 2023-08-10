@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const DeleteButton = ({ onClick }) => (
   <button onClick={onClick} type="button">
@@ -7,3 +8,7 @@ const DeleteButton = ({ onClick }) => (
 );
 
 export default DeleteButton;
+
+StaticRange.PropTypes = {
+  onClick: PropTypes.func,
+};

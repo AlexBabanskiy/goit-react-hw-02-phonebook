@@ -1,5 +1,6 @@
 import React from 'react';
-import ContactItem from './ContactItem';
+import ContactItem from '../Contactitem/ContactItem';
+import PropTypes from 'prop-types';
 
 const ContactList = ({ contacts, onDelete }) => (
   <ul>
@@ -10,3 +11,8 @@ const ContactList = ({ contacts, onDelete }) => (
 );
 
 export default ContactList;
+
+StaticRange.PropTypes = {
+  contacts: PropTypes.object,
+  onDelete: PropTypes.func,
+};

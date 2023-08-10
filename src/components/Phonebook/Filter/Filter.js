@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Filter = ({ value, onChange }) => (
   <div>
@@ -10,3 +11,8 @@ const Filter = ({ value, onChange }) => (
 );
 
 export default Filter;
+
+StaticRange.PropTypes = {
+  value: PropTypes.object,
+  onChange: PropTypes.func,
+};
